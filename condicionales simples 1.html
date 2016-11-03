@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p> Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 'Promocionado'. </p>
+
+	<script type="text/javascript">
+		
+var nota1 = parseInt(prompt("Ingrese la nota del examen"));
+var nota2 = parseInt(prompt("ingrese la nota de la exposicion"));
+var nota3 = parseInt(prompt("ingrese la nota del trabajo"));
+
+var notas = nota1+ nota2+ nota3;
+var promedio = notas/3;
+
+if(promedio == 7){
+	alert("promovido");
+}else{
+	alert("mejor repite el curso obtuviste un :  " + promedio);
+
+}
+
+	</script>
+
+</body>
+</html>

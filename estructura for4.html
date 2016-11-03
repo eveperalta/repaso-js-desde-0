@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p style = "color: red; font-size: 24px">Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)
+	Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.</p>
+
+<script type = "text/javascript">
+	
+	var multiplica;
+	var resultado = 0;
+
+	multiplica = parseInt(prompt("Ingrese el numero a multiplicar"));
+
+	for(var i = 1; i <= 12; i++){
+		resultado = multiplica * i;
+	document.write(resultado + "-");	
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p style = "color: blue"; >Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) luego mostrar la palabra traducida en inglés.</p>
+
+	<script type = "text/javascript">
+		
+		var palabra ;
+		palabra = prompt("Elije la palabra que quieres traducir: 'casa', 'mesa', 'perro', 'gato';");
+
+		switch(palabra){
+			case 'casa': document.write("House");
+				break;
+			case 'mesa': document.write("Table");
+				break;
+			case 'perro' : document.write('Dog');
+				break;
+			case 'gato': document.write("Cat");
+				break;
+		}
+
+	</script>
+</body>
+</html>

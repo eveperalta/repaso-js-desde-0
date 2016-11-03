@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Realizar un programa que lea los lados de 4 triángulos, e informar:
+	<ul>
+		<li>De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), isósceles (dos lados iguales), o escaleno (ningún lado igual)</li>
+		<li>Cantidad de triángulos de cada tipo.</li>
+		<li>Tipo de triángulo del que hay menor cantidad.</li>
+	</ul>
+	</p>
+
+	<script style = "text/javascript">
+		
+		function getRandomArbitrary(min, max) {
+		 return Math.floor(Math.random() * (max - min) + min)
+		}
+		function generadorTriangulo(cantidad){
+			temp =[];
+			for(var i=0; i< cantidad; i++){
+				temp.push([getRandomArbitrary(2,6),getRandomArbitrary(2,6),getRandomArbitrary(2,6)])
+			}
+			return temp;
+		}
+
+		var triangulo = generadorTriangulo(4);
+		console.log(triangulo);
+
+		var tipo = [];
+		 for(var i = 0; i <triangulo.length; i++){
+
+		 	if(triangulo[i][0] === triangulo[i][1] && triangulo[i][1] === triangulo[i][2]){
+		 		console.log(triangulo[i]);
+		 		tipo.push("equilatero");
+		 	} else if(triangulo[i][0] === triangulo[i][1] || triangulo[i][0] === triangulo[i][2] || triangulo[i][1] === triangulo[i][2]){
+		 		console.log(triangulo[i]);
+		 		tipo.push("isoceles");
+		 	} else {
+		 		console.log(triangulo[i]);
+		 		tipo.push("escaleno");
+		 	}
+
+		 }
+		 document.write(tipo);
+
+	</script>
+</body>
+</html>

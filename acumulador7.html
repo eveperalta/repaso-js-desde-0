@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.</p>
+
+	<script type = "text/javascript">
+		
+		var x = 0;
+		var entero = 0;
+		var numero = 0;
+
+		while(x<5){
+			var entero = parseInt(prompt("Escribe 5 numeros enteros"));
+			var numero = entero % 2;
+			x = x+1;
+		}
+		if (numero == 0){
+			document.write("el numero es par = " + numero);
+		}else{
+			document.write("el numero es impar = " + numero);
+		}
+	</script>
+</body>
+</html>
